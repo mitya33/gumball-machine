@@ -32,4 +32,15 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
 		// ... we should now have 99 gumballs remaining in the machine, right?
 		$this->assertEquals(49, $this->gumballMachineInstance->getGumballs());
 	}
+
+	public function testIfWheelWorksStart0(){
+		// Suppose we have 50 gumballs...
+		$this->gumballMachineInstance->setGumballs(0);
+
+		// ... And we turn the wheel once...
+		$this->gumballMachineInstance->turnWheel();
+
+		// ... we should now have 99 gumballs remaining in the machine, right?
+		$this->assertEquals(0, $this->gumballMachineInstance->getGumballs());
+	}
 }
