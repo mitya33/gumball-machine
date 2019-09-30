@@ -16,7 +16,19 @@ class GumballMachine{
 	}
 
 	// The user turns the wheel, machine dispenses gumball!
+	//public function turnWheel(){
+	//	$this->setGumballs($this->getGumballs() -1);
+	//}
+	// Marios re-work of the function to make it work if the machine is empty
 	public function turnWheel(){
-		$this->setGumballs($this->getGumballs() -1);
-	}
+        if ($this->gumballs >= 1){
+            $this->setGumballs($this->getGumballs() -1);
+        }
+        return 0;
+    }
+Collapse
+
+
+
+
 }
