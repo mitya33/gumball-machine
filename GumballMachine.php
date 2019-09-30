@@ -26,9 +26,4 @@ class GumballMachine{
         }
         return 0;
     }
-Collapse
-
-
-
-
 }
